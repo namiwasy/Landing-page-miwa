@@ -18,7 +18,14 @@
   <!-- navbar -->
   <nav class="navbar-custom">
     <a class="navbar-brand-name" href="#">miwa.dev</a>
-    <div class="navbar-links">
+
+    <button class="navbar-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="navbar-links" id="navbarLinks">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -139,6 +146,26 @@
       offset: 80,
       easing: 'ease-out-cubic'
     });
+
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    if (navbarToggle && navbarLinks) {
+      navbarToggle.addEventListener('click', () => {
+        const isOpen = navbarLinks.classList.toggle('open');
+        navbarToggle.classList.toggle('active', isOpen);
+        navbarToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      navbarLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navbarLinks.classList.remove('open');
+          navbarToggle.classList.remove('active');
+          navbarToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
     document.querySelectorAll('.navbar-links a').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
