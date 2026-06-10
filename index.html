@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namira Syafiqah | Portfolio</title>
+
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- aos -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar-custom">
+    <a class="navbar-brand-name" href="#">miwa.dev</a>
+    <div class="navbar-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- get wave -->
+  <div class="navbar-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#f6397e" fill-opacity="1" d="M0,192L24,186.7C48,181,96,171,144,170.7C192,171,240,181,288,160C336,139,384,85,432,85.3C480,85,528,139,576,176C624,213,672,235,720,218.7C768,203,816,149,864,138.7C912,128,960,160,1008,192C1056,224,1104,256,1152,256C1200,256,1248,224,1296,181.3C1344,139,1392,85,1416,58.7L1440,32L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+  </div>
+
+  <!-- hero -->
+  <section class="hero-section" id="home">
+    <a href="https://www.instagram.com/namira.sya_/" target="_blank" rel="noopener noreferrer"
+       data-aos="zoom-in" >
+      <img
+        src="/assets/fotomiwacans.jpg"
+        alt="Namira Syafiqah"
+        class="hero-avatar"
+      />
+    </a>
+    <p class="hero-greeting" data-aos="fade-up">Haloo saya</p>
+    <h1 class="hero-name" data-aos="fade-up" >Namira Syafiqah</h1>
+    <p class="hero-role" data-aos="fade-up" >Student | Developer | Designer</p>
+  </section>
+
+  <!-- about -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <p class="about-text" data-aos="fade-up">
+        Saya adalah seorang siswa yang sedang menempuh pendidikan di
+        <strong>SMK Telkom Makassar</strong>, jurusan Rekayasa Perangkat Lunak.
+        Saya memiliki minat yang besar dalam bidang teknologi, terutama dalam
+        pengembangan perangkat lunak dan desain UI/UX. Saya juga aktif dalam
+        berbagai proyek pengembangan aplikasi dan memiliki pengalaman dalam
+        bekerja dengan tim untuk menciptakan solusi inovatif.
+      </p>
+
+      <!-- skill -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4"
+           data-aos="fade-up">
+      </div>
+    </div>
+  </section>
+
+  <!-- projek -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="row justify-content-center g-4 mt-1">
+
+        <!-- SkriPlan -->
+        <div class="col-sm-10 col-md-5" data-aos="fade-right">
+          <a href="https://www.instagram.com/skriplan.project/"
+             target="_blank" rel="noopener noreferrer" class="project-card">
+            <img src="/assets/projectskriplan.png" alt="SkriPlan" />
+            <div class="project-card-body">
+              <h3>SkriPlan</h3>
+              <p>Website yang dirancang untuk mempermudah pengaturan jadwal bimbingan antara mahasiswa dan dosen, secara efisien dan terstruktur. Aplikasi ini membantu mengurangi kesalahan komunikasi, bentrok jadwal, dan proses manual yang memakan waktu.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- coming soon -->
+        <div class="col-sm-10 col-md-5" data-aos="fade-up">
+          <article class="project-card">
+            <img src="/assets/Coming%20soon%20ideas.jpg" alt="Coming Soon" />
+            <div class="project-card-body">
+              <h3>Coming Soon</h3>
+              <p>Project berikutnya akan segera hadir. Tetap pantau update terbaru dari portfolio ini.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Contact Me <3</h2>
+      <div class="contact-form" data-aos="zoom-in-up">
+        <div class="mb-3">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" class="form-control mt-1" placeholder="Masukkan nama Anda" />
+        </div>
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control mt-1" placeholder="Masukkan email Anda" />
+        </div>
+        <div class="mb-4">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" class="form-control mt-1" rows="4" placeholder="Tulis pesan atau pertanyaan Anda"></textarea>
+        </div>
+        <button type="button" class="btn-pink">Kirim</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <span class="dot-accent"></span>
+    © 2026 Namira Syafiqah. All rights reserved.
+    <span class="dot-accent"></span>
+  </footer>
+
+  <!-- bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- aos js -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- custom js -->
+  <script>
+    AOS.init({
+      once: true,
+      offset: 80,
+      easing: 'ease-out-cubic'
+    });
+    document.querySelectorAll('.navbar-links a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
